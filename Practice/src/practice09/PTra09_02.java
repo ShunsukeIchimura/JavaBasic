@@ -5,6 +5,7 @@ package practice09;
  *------------------------------------------------------------
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
+import practice09.util.Util;
 
 public class PTra09_02 {
 	public static void main(String[] args) {
@@ -15,6 +16,10 @@ public class PTra09_02 {
 
 
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
+		String[] X = Util.shuffleArray(array);
 
+		for (String value:X) {
+			System.out.println(value);
+		}
 	}
 }
